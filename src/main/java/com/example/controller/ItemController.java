@@ -30,7 +30,7 @@ public class ItemController {
 	@GetMapping
 	public String index(Model model) {
 		// データの疎通確認
-	    List<Item> items = this.itemService.findAll();
+	    List<Item> items = this.itemService.findByDeletedAtIsNull();
 	    // コンソールよりListの中身を確認する
 	    model.addAttribute("items", items);
 //	    System.out.println(items.toString());
