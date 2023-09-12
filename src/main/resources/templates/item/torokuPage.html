@@ -32,7 +32,7 @@
         <label>カテゴリ名</label>
       </div>
       <div>
-        <select th;field="*{categoryId}">
+        <select th:field="*{categoryId}">
           <option
             th:each="category:${categories}"
             th:value="${category.id}"

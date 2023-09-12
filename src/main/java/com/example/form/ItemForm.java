@@ -19,6 +19,7 @@ public class ItemForm {
         this.price = price;
     }
     private Integer categoryId;
+    
     public Integer getCategoryId() {
     	return this.categoryId;
     }
