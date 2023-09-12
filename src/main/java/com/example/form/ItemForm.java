@@ -18,4 +18,12 @@ public class ItemForm {
     public void setPrice(Integer price) {
         this.price = price;
     }
+    private Integer categoryId;
+    
+    public Integer getCategoryId() {
+    	return this.categoryId;
+    }
+    public void setCategoryId(Integer categoryId) {
+    	this.categoryId = categoryId;
+    }
 }

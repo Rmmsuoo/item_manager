@@ -27,6 +27,7 @@ public class ItemService {
 		Item item = new Item();
 		item.setName(itemForm.getName());
 		item.setPrice(itemForm.getPrice());
+		item.setCategoryId(itemForm.getCategoryId());
 		return this.itemRepository.save(item);
 	}
 	public Item findById(Integer id) {
@@ -38,6 +39,7 @@ public class ItemService {
 		Item item = this.findById(id);
 		item.setName(itemForm.getName());
 		item.setPrice(itemForm.getPrice());
+		item.setCategoryId(itemForm.getCategoryId());
 		return this.itemRepository.save(item);
 	}
 	public Item delete(Integer id) {
